@@ -11,23 +11,19 @@ const About = () => {
 					</p>
 				</div>
 				<p className="text-xl mt-20">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque
-					ex labore voluptates hic error magnam cupiditate, nam ipsum quae eius
-					perspiciatis amet aut rem cum tempore in rerum fuga eligendi sapiente
-					voluptatum qui. Sequi ex exercitationem iure voluptatum reiciendis,
-					molestiae sapiente asperiores quis fugiat obcaecati minima, sed,
-					laudantium mollitia!
+					Hello! My name is <span>Kent M. Fortich</span>. I have been interested
+					in building refined digital web experiences with a focus on responsive
+					and interactive content.
 				</p>
 
 				<br />
 
 				<p className="text-xl">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
-					esse voluptate eveniet obcaecati officia recusandae autem illo minima
-					ex quasi accusamus corrupti sapiente ducimus tenetur quis sunt odio,
-					explicabo aperiam. Nihil eius dicta dolore nesciunt fugit! Asperiores
-					ipsam placeat quaerat iure veritatis? Cumque, similique? Accusantium
-					officiis tempore magni fugiat deleniti!
+					I graduated with a bachelor's degree in
+					<span>Computer Science</span> at Lyceum of the Philippines Batangas.
+					Currently, I'm seeking for an entry level position to start my journey
+					in the realm of
+					<span> Web Development</span> field.
 				</p>
 			</div>
 		</div>

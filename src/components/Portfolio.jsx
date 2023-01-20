@@ -1,43 +1,33 @@
-import Me from "../assets/Me.png";
+import todolist from "../assets/todolist.png";
+import soundsurge from "../assets/soundsurge.png";
+import connectify from "../assets/connectify.png";
 
 const Portfolio = () => {
 	const portfolios = [
 		{
 			id: 1,
-			src: Me,
+			src: todolist,
 			href: "https://github.com/4kent4",
+			demo: "https://4kent4.github.io/to-do-list/",
 		},
 		{
 			id: 2,
-			src: Me,
+			src: soundsurge,
 			href: "https://github.com/4kent4",
+			demo: "https://4kent4.github.io/sound-surge-landing-page/",
 		},
 		{
 			id: 3,
-			src: Me,
+			src: connectify,
 			href: "https://github.com/4kent4",
-		},
-		{
-			id: 4,
-			src: Me,
-			href: "https://github.com/4kent4",
-		},
-		{
-			id: 5,
-			src: Me,
-			href: "https://github.com/4kent4",
-		},
-		{
-			id: 6,
-			src: Me,
-			href: "https://github.com/4kent4",
+			demo: "https://connectify-dbb63.web.app/",
 		},
 	];
 
 	return (
 		<div
 			name="portfolio"
-			className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full"
+			className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
 				<div className="pb-8">
@@ -48,7 +38,7 @@ const Portfolio = () => {
 				</div>
 
 				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-					{portfolios.map(({ id, src, href }) => (
+					{portfolios.map(({ id, src, href, demo }) => (
 						<div key={id} className="shadow-md shadow-gray-600 rounded-lg">
 							<img
 								src={src}
@@ -57,7 +47,7 @@ const Portfolio = () => {
 							/>
 							<div className="flex items-center justify-center">
 								<a
-									href={href}
+									href={demo}
 									target="_blank"
 									rel="noreferrer"
 									className="w-1/2 px-6 py-3 duration-200 hover:scale-105 flex justify-center"
