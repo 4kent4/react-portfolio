@@ -1,8 +1,38 @@
 import todolist from "../assets/todolist.png";
 import soundsurge from "../assets/soundsurge.png";
 import connectify from "../assets/connectify.png";
+import { motion, useAnimationControls } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Portfolio = () => {
+	const { ref, inView } = useInView({ threshold: 0.2 });
+	const controls = useAnimationControls();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start({
+				x: 0,
+				scale: 1,
+				transition: {
+					type: "spring",
+					duration: 1,
+					bounce: 0.1,
+				},
+			});
+		}
+		if (!inView) {
+			controls.start({
+				x: "-100vw",
+				transition: {
+					type: "spring",
+					duration: 1,
+					bounce: 0.1,
+				},
+			});
+		}
+	}, [inView]);
+
 	const portfolios = [
 		{
 			id: 1,
@@ -37,9 +67,16 @@ const Portfolio = () => {
 					<p className="py-6">Check out some of my work right here</p>
 				</div>
 
-				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+				<div
+					ref={ref}
+					className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
+				>
 					{portfolios.map(({ id, src, href, demo }) => (
-						<div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+						<motion.div
+							key={id}
+							className="shadow-md shadow-gray-600 rounded-lg"
+							animate={controls}
+						>
 							<img
 								src={src}
 								alt=""
@@ -63,7 +100,7 @@ const Portfolio = () => {
 									Code
 								</a>
 							</div>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>

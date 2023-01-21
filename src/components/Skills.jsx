@@ -9,8 +9,29 @@ import nodejs from "../assets/nodejs-logo.png";
 import react from "../assets/react-logo.png";
 import redux from "../assets/redux-logo.png";
 import tailwind from "../assets/tailwind-logo.png";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimationControls } from "framer-motion";
 
 const Skills = () => {
+	const { ref, inView } = useInView({ threshold: 0.3 });
+	const controls = useAnimationControls();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start({
+				scale: 1,
+				transition: { duration: 0.2 },
+			});
+		}
+		if (!inView) {
+			controls.start({
+				scale: 0,
+				transition: { duration: 0.2 },
+			});
+		}
+	}, [inView]);
+
 	const techs = [
 		{
 			id: 1,
@@ -91,15 +112,21 @@ const Skills = () => {
 					</p>
 				</div>
 
-				<div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+				<div
+					ref={ref}
+					className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0"
+				>
 					{techs.map(({ title, id, src, style }) => (
-						<div
+						<motion.div
+							layout
+							animate={controls}
 							key={id}
-							className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+							className={`shadow-md py-2 rounded-lg ${style}`}
+							whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
 						>
 							<img src={src} alt="" className="w-20 mx-auto" />
 							<p className="mt-4">{title}</p>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>
