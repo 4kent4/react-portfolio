@@ -1,7 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import { motion, useAnimationControls } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const HeroContex = () => {
 	const { ref, inView } = useInView({ threshold: 0.5 });

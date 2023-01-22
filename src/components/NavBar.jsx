@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
 	const [navbar, setNavbar] = useState(false);
+	const [navActive, setNavActive] = useState(1);
+	console.log(navActive);
 
 	const links = [
 		{
@@ -19,7 +21,7 @@ const NavBar = () => {
 		},
 		{
 			id: 4,
-			link: "Skills",
+			link: "skills",
 		},
 		{
 			id: 5,
@@ -28,21 +30,27 @@ const NavBar = () => {
 	];
 
 	return (
-		<div className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-transparent fixed">
+		<nav className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-transparent fixed">
 			<div>
 				<h1 className="text-yellow-400 text-4xl font-signature ml-2">Kent</h1>
 			</div>
 
-			<ul className="hidden md:flex">
+			<div className="hidden md:flex">
 				{links.map(({ id, link }) => (
-					<li
+					<a
+						href={`#${link}`}
+						onClick={() => setNavActive(id)}
 						key={id}
-						className="px-4 cursor-pointer font-medium capitalize text-gray-500 hover:scale-105 duration-200"
+						className={`p-2 w-28 rounded-lg items-center text-center cursor-pointer font-medium capitalize ${`hover:bg-gray-500 hover:text-white duration-500`} duration-5000 ${
+							navActive === id
+								? " text-black bg-gradient-to-r from-yellow-300 to-yellow-600 duration-500"
+								: "text-gray-400"
+						}`}
 					>
 						{link}
-					</li>
+					</a>
 				))}
-			</ul>
+			</div>
 			<div
 				onClick={() => setNavbar(!navbar)}
 				className="cursor-pointer px-4 z-10 text-gray-500 md:hidden"
@@ -51,18 +59,24 @@ const NavBar = () => {
 			</div>
 
 			{navbar && (
-				<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800">
+				<div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800">
 					{links.map(({ id, link }) => (
-						<li
+						<a
+							href={`#${link}`}
+							onClick={() => setNavActive(id)}
 							key={id}
-							className="py-6 cursor-pointer font-medium capitalize text-gray-500 text-4xl hover:scale-105 duration-200"
+							className={`py-6 w-1/2 text-center rounded-lg cursor-pointer font-medium capitalize text-4xl ${`hover:bg-gray-500 hover:text-white duration-500`} duration-200 ${
+								navActive === id
+									? " text-black bg-gradient-to-r from-yellow-300 to-yellow-600 duration-500"
+									: "text-gray-400"
+							}`}
 						>
 							{link}
-						</li>
+						</a>
 					))}
-				</ul>
+				</div>
 			)}
-		</div>
+		</nav>
 	);
 };
 export default NavBar;

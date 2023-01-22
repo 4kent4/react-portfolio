@@ -5,7 +5,7 @@ import ContactTextContent from "./subComponents/ContactTextContent";
 const Contact = () => {
 	return (
 		<div
-			name="about"
+			id="contact"
 			className="w-full h-full md:h-screen bg-gradient-to-b from-black to-gray-800 text-white"
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
