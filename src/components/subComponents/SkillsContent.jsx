@@ -10,14 +10,16 @@ const SkillsContent = () => {
 	useEffect(() => {
 		if (inView) {
 			controls.start({
+				opacity: 1,
 				scale: 1,
-				transition: { duration: 0.2 },
+				transition: { duration: 0.4 },
 			});
 		}
 		if (!inView) {
 			controls.start({
+				opacity: 0,
 				scale: 0,
-				transition: { duration: 0.2 },
+				transition: { duration: 0.4 },
 			});
 		}
 	}, [inView]);

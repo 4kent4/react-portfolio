@@ -7,21 +7,24 @@ const AboutIntro = () => {
 	const controls = useAnimationControls();
 
 	useEffect(() => {
-		if (!inView) {
+		if (inView) {
 			controls.start({
-				x: "-100vw",
+				x: 0,
+				scale: 1,
 				transition: {
 					type: "spring",
-					duration: 0.3,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});
-		} else {
+		}
+		if (!inView) {
 			controls.start({
-				x: 0,
+				x: "-100vw",
+				scale: 0,
 				transition: {
 					type: "spring",
-					duration: 0.3,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});
@@ -36,19 +39,20 @@ const AboutIntro = () => {
 				</p>
 
 				<p className="text-xl mt-20">
-					Hello! My name is <span>Kent M. Fortich</span>. I have been interested
-					in building refined digital web experiences with a focus on responsive
-					and interactive content.
+					Hello! My name is{" "}
+					<span className="text-yellow-500">Kent M. Fortich</span>. I have been
+					interested in building refined digital web experiences with a focus on
+					responsive and interactive content.
 				</p>
 
 				<br />
 
 				<p className="text-xl">
 					I graduated with a bachelor's degree in
-					<span>Computer Science</span> at Lyceum of the Philippines Batangas.
-					Currently, I'm seeking for an entry level position to start my journey
-					in the realm of
-					<span> Web Development</span> field.
+					<span className="text-yellow-500"> Computer Science</span> at Lyceum
+					of the Philippines Batangas. Currently, I'm seeking for an entry level
+					position to start my journey in the realm of
+					<span className="text-yellow-500"> Web Development</span> field.
 				</p>
 			</motion.div>
 		</div>

@@ -15,7 +15,7 @@ const ContactDetailsContent = () => {
 				x: 0,
 				transition: {
 					type: "spring",
-					duration: 0.3,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});
@@ -24,7 +24,7 @@ const ContactDetailsContent = () => {
 				x: "-100vw",
 				transition: {
 					type: "spring",
-					duration: 0.3,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});

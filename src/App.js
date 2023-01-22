@@ -8,7 +8,7 @@ import SocialLinks from "./components/SocialLinks";
 
 const App = () => {
 	return (
-		<div>
+		<div className="tracking-wide font-light">
 			<NavBar />
 			<Home />
 			<About />

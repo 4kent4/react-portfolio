@@ -1,7 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import { motion, useAnimationControls } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const HeroContex = () => {
 	const { ref, inView } = useInView({ threshold: 0.5 });
@@ -14,7 +14,7 @@ const HeroContex = () => {
 				scale: 1,
 				transition: {
 					type: "spring",
-					duration: 0.5,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});
@@ -25,12 +25,12 @@ const HeroContex = () => {
 				scale: 0,
 				transition: {
 					type: "spring",
-					duration: 0.5,
+					duration: 0.8,
 					bounce: 0.1,
 				},
 			});
 		}
-	});
+	}, [inView]);
 
 	return (
 		<div ref={ref}>
@@ -42,8 +42,8 @@ const HeroContex = () => {
 					I'm a Front-end Web Developer
 				</h2>
 				<p className="text-gray-500 py-4 max-w-md">
-					I love to work on web application using technologies like tailwind,
-					FramerMotion and MERN stack.
+					I love to work on web application using technologies like Reactjs,
+					tailwind css, FramerMotion.
 				</p>
 				<div className="flex md:justify-center lg:justify-start">
 					<button className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-300 to-yellow-600 cursor-pointer">
