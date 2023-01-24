@@ -74,7 +74,7 @@ const Portfolio = () => {
 					{portfolios.map(({ id, src, href, demo }) => (
 						<motion.div
 							key={id}
-							className="shadow-md shadow-gray-600 rounded-lg"
+							className="shadow-md shadow-gray-400 rounded-lg"
 							animate={controls}
 						>
 							<img
@@ -82,12 +82,12 @@ const Portfolio = () => {
 								alt=""
 								className="rounded-md duration-200 hover:scale-105"
 							/>
-							<div className="flex items-center justify-center">
+							<div className="flex items-center justify-evenly">
 								<a
 									href={demo}
 									target="_blank"
 									rel="noreferrer"
-									className="w-1/2 px-6 py-3 duration-200 hover:scale-105 flex justify-center"
+									className=" text-black w-fit px-6 py-3 my-2 items-center rounded-md cursor-pointer bg-yellow-500 hover:bg-black hover:text-white duration-300"
 								>
 									Demo
 								</a>
@@ -95,7 +95,7 @@ const Portfolio = () => {
 									href={href}
 									target="_blank"
 									rel="noreferrer"
-									className="w-1/2 px-6 py-3 duration-200 hover:scale-105 flex justify-center"
+									className=" text-black w-fit px-6 py-3 my-2 items-center rounded-md cursor-pointer bg-yellow-500 hover:bg-black hover:text-white duration-300"
 								>
 									Code
 								</a>

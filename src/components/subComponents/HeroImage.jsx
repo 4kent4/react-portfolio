@@ -30,7 +30,7 @@ const HeroImage = () => {
 
 	return (
 		<div ref={ref}>
-			<motion.div animate={controls}>
+			<motion.div animate={controls} className="p-6 md:p-0">
 				<img src={Mypic} alt="Me" className="rounded-2xl mx-auto w-3/4" />
 			</motion.div>
 		</div>

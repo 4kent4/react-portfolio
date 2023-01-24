@@ -33,7 +33,9 @@ const NavBar = () => {
 	return (
 		<nav className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-transparent fixed">
 			<div>
-				<h1 className="text-yellow-400 text-2xl font-signature ml-2">Kent</h1>
+				<h1 className="hidden text-yellow-400 text-2xl font-signature ml-2">
+					Kent
+				</h1>
 			</div>
 
 			<div className="hidden md:flex">
@@ -71,7 +73,7 @@ const NavBar = () => {
 							href={`#${link}`}
 							onClick={() => setNavActive(id)}
 							key={id}
-							className={`py-6 w-1/2 text-center rounded-lg cursor-pointer font-medium capitalize text-2xl ${`hover:bg-gray-500 hover:text-white duration-500`} duration-200 ${
+							className={`py-6 w-full md:w-1/2 text-center rounded-lg cursor-pointer font-medium capitalize md:text-2xl ${`hover:bg-gray-500 hover:text-white duration-500`} duration-200 ${
 								navActive === id
 									? " text-black bg-gradient-to-r from-yellow-300 to-yellow-600 duration-500"
 									: "text-gray-400"

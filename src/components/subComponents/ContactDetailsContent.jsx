@@ -68,8 +68,11 @@ const ContactDetailsContent = () => {
 		<div ref={ref} className="w-3/4 md:w-1/2">
 			<motion.div animate={controls} className="w-full h-full">
 				{details.map(({ id, icon, text1, text2 }) => (
-					<div key={id} className="flex items-center mb-8">
-						{icon}
+					<div
+						key={id}
+						className="flex items-center mb-8 flex-col md:flex-row text-center md:text-left"
+					>
+						<div className=" h-8 w-8 mb-2 md:mb-0">{icon}</div>
 
 						<div className="ml-4">
 							<p className="text-xl">{text1}</p>

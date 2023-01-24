@@ -78,7 +78,7 @@ const ContactTextContent = () => {
 					/>
 					<button
 						type="submit"
-						className=" text-black w-fit px-6 py-3 my-2 items-center rounded-md bg-gradient-to-r from-yellow-300 to-yellow-600 cursor-pointer"
+						className=" text-black w-fit px-6 py-3 my-2 items-center rounded-md cursor-pointer bg-yellow-500 hover:bg-black hover:text-white duration-300"
 					>
 						Submit
 					</button>
