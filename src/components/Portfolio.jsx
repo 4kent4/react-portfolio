@@ -1,6 +1,7 @@
 import todolist from "../assets/todolist.png";
 import soundsurge from "../assets/soundsurge.png";
 import connectify from "../assets/connectify.png";
+import goalsetter from "../assets/goal-setter.png";
 import { motion, useAnimationControls } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -37,19 +38,25 @@ const Portfolio = () => {
 		{
 			id: 1,
 			src: todolist,
-			href: "https://github.com/4kent4",
+			href: "https://github.com/4kent4/to-do-list",
 			demo: "https://4kent4.github.io/to-do-list/",
 		},
 		{
 			id: 2,
-			src: soundsurge,
-			href: "https://github.com/4kent4",
-			demo: "https://4kent4.github.io/sound-surge-landing-page/",
+			src: goalsetter,
+			href: "https://github.com/4kent4/Mern-goal-setter",
+			demo: "/",
 		},
 		{
 			id: 3,
+			src: soundsurge,
+			href: "https://github.com/4kent4/sound-surge-landing-page",
+			demo: "https://4kent4.github.io/sound-surge-landing-page/",
+		},
+		{
+			id: 4,
 			src: connectify,
-			href: "https://github.com/4kent4",
+			href: "https://github.com/4kent4/Connectify",
 			demo: "https://connectify-dbb63.web.app/",
 		},
 	];

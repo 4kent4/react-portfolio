@@ -63,7 +63,7 @@ const AboutCards = () => {
 					<div className="mb-6 text-2xl text-center text-yellow-500 h-12">
 						<p>{title}</p>
 					</div>
-					<div className="text-xl">
+					<div className="text-xl p-4">
 						<p>{content}</p>
 					</div>
 				</motion.div>

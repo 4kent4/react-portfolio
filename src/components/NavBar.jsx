@@ -31,7 +31,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<nav className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-transparent fixed">
+		<nav className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-black fixed">
 			<div>
 				<h1 className="hidden text-yellow-400 text-2xl font-signature ml-2">
 					Kent
@@ -66,14 +66,14 @@ const NavBar = () => {
 					initial={{ x: "100vw" }}
 					animate={{ x: 0 }}
 					transition={{ duration: 0.5 }}
-					className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/3 h-screen bg-gradient-to-b from-black to-gray-800"
+					className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/5 h-screen bg-gradient-to-b from-black to-gray-800 md:hidden"
 				>
 					{links.map(({ id, link }) => (
 						<a
 							href={`#${link}`}
 							onClick={() => setNavActive(id)}
 							key={id}
-							className={`py-6 w-full md:w-1/2 text-center rounded-lg cursor-pointer font-medium capitalize md:text-2xl ${`hover:bg-gray-500 hover:text-white duration-500`} duration-200 ${
+							className={`py-6 w-full text-center rounded-lg cursor-pointer font-medium capitalize md:text-2xl ${`hover:bg-gray-500 hover:text-white duration-500`} duration-200 ${
 								navActive === id
 									? " text-black bg-gradient-to-r from-yellow-300 to-yellow-600 duration-500"
 									: "text-gray-400"
