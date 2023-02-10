@@ -31,7 +31,7 @@ const NavBar = () => {
 	];
 
 	return (
-		<nav className="flex justify-between items-center w-full h-20 px-4 z-50 text-white bg-black fixed">
+		<nav className="flex justify-between items-center w-screen h-20 px-4 z-50 text-white bg-black fixed">
 			<div>
 				<h1 className="hidden text-yellow-400 text-2xl font-signature ml-2">
 					Kent
