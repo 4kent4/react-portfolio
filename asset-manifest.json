@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.2f85bead.css",
-    "main.js": "/react-portfolio/static/js/main.73c18e5e.js",
+    "main.css": "/react-portfolio/static/css/main.67e8acf8.css",
+    "main.js": "/react-portfolio/static/js/main.99fb4afb.js",
+    "static/media/Me.png": "/react-portfolio/static/media/Me.5348e31e6415b7607653.png",
     "static/media/soundsurge.png": "/react-portfolio/static/media/soundsurge.87eaa6d4711641801673.png",
-    "static/media/Me.png": "/react-portfolio/static/media/Me.b0b057868197f036901e.png",
     "static/media/todolist.png": "/react-portfolio/static/media/todolist.a62ee3408bc56020fb84.png",
     "static/media/connectify.png": "/react-portfolio/static/media/connectify.f6a21f109fbef82651dd.png",
+    "static/media/goal-setter.png": "/react-portfolio/static/media/goal-setter.6709756f7bb9ddbec0a7.png",
     "static/media/react-logo.png": "/react-portfolio/static/media/react-logo.9911848e6c15b84c4b0c.png",
     "index.html": "/react-portfolio/index.html",
-    "main.2f85bead.css.map": "/react-portfolio/static/css/main.2f85bead.css.map",
-    "main.73c18e5e.js.map": "/react-portfolio/static/js/main.73c18e5e.js.map"
+    "main.67e8acf8.css.map": "/react-portfolio/static/css/main.67e8acf8.css.map",
+    "main.99fb4afb.js.map": "/react-portfolio/static/js/main.99fb4afb.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f85bead.css",
-    "static/js/main.73c18e5e.js"
+    "static/css/main.67e8acf8.css",
+    "static/js/main.99fb4afb.js"
   ]
 }
