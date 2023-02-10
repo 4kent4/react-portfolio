@@ -4,7 +4,7 @@ import { motion, useAnimationControls } from "framer-motion";
 import SkillsData from "./SkillsData";
 
 const SkillsContent = () => {
-	const { ref, inView } = useInView({ threshold: 0.3 });
+	const { ref, inView } = useInView({ threshold: 0.2 });
 	const controls = useAnimationControls();
 
 	useEffect(() => {
