@@ -32,21 +32,21 @@ const AboutCards = () => {
 		},
 		{
 			id: 2,
-			title: "Scalable MERN Stack Development",
-			content:
-				"Proficient in creating full-stack web applications using the MERN (MongoDB, Express.js, React, and Node.js) stack. This means that I can create powerful and efficient web apps that can handle large amounts of data and provide a seamless user experience.",
-		},
-		{
-			id: 3,
-			title: "Interactive Animation",
-			content:
-				"Knowledgeable in using Framer Motion to create engaging and interactive animations that enhance the user experience and bring your website to life.",
-		},
-		{
-			id: 4,
 			title: "User-Friendly CRUD Operations",
 			content:
 				"Well-versed in creating basic CRUD (Create, Read, Update, Delete) operations that allow for seamless data management in web applications. This means that I can create functional and easy-to-use interfaces for managing data on your website.",
+		},
+		{
+			id: 3,
+			title: "Basic MERN Stack Skills",
+			content:
+				"As a beginner MERN stack developer, I possess the skills to create full-stack web applications using MongoDB, Express.js, React, and Node.js, allowing me to develop robust and scalable web apps. With a solid foundation in front-end technologies.",
+		},
+		{
+			id: 4,
+			title: "Interactive Animation",
+			content:
+				"Knowledgeable in using Framer Motion to create engaging and interactive animations that enhance the user experience and bring your website to life.",
 		},
 	];
 	return (
