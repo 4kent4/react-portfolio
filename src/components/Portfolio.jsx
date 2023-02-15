@@ -1,4 +1,3 @@
-import todolist from "../assets/todolist.png";
 import soundsurge from "../assets/soundsurge.png";
 import connectify from "../assets/connectify.png";
 import goalsetter from "../assets/goal-setter.png";
@@ -37,24 +36,18 @@ const Portfolio = () => {
 	const portfolios = [
 		{
 			id: 1,
-			src: todolist,
-			href: "https://github.com/4kent4/to-do-list",
-			demo: "https://4kent4.github.io/to-do-list/",
+			src: goalsetter,
+			href: "https://github.com/4kent4/Mern-goal-setter",
+			demo: "https://mern-goal-setter.netlify.app/",
 		},
 		{
 			id: 2,
-			src: goalsetter,
-			href: "https://github.com/4kent4/Mern-goal-setter",
-			demo: "/",
-		},
-		{
-			id: 3,
 			src: soundsurge,
 			href: "https://github.com/4kent4/sound-surge-landing-page",
 			demo: "https://4kent4.github.io/sound-surge-landing-page/",
 		},
 		{
-			id: 4,
+			id: 3,
 			src: connectify,
 			href: "https://github.com/4kent4/Connectify",
 			demo: "https://connectify-dbb63.web.app/",
