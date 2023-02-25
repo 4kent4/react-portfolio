@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import nice from "../assets/nice.png";
 
 const NavBar = () => {
 	const [navbar, setNavbar] = useState(false);
@@ -31,11 +32,9 @@ const NavBar = () => {
 	];
 
 	return (
-		<nav className="flex justify-between items-center w-screen h-20 px-4 z-50 text-white bg-black fixed">
-			<div>
-				<h1 className="hidden text-yellow-400 text-2xl font-signature ml-2">
-					Kent
-				</h1>
+		<nav className="flex justify-between items-center w-screen h-20 px-4 z-50 text-white bg-[#1b1b1b] fixed">
+			<div className="h-10 w-10 ml-10">
+				<img src={nice} alt="nice" />
 			</div>
 
 			<div className="hidden md:flex">

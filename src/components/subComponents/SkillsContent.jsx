@@ -47,7 +47,7 @@ const SkillsContent = () => {
 					<motion.div
 						variants={variants}
 						key={id}
-						className={`bg-gradient-to-b from-black to-gray-800 shadow-md py-2 rounded-lg ${style}`}
+						className={`bg-[#1b1b1b] shadow-md py-2 rounded-lg ${style}`}
 						whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
 					>
 						<img src={src} alt="" className="w-20 mx-auto" />

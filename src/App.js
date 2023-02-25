@@ -9,8 +9,9 @@ import Footer from "./components/Footer";
 
 const App = () => {
 	return (
-		<div className="tracking-wide font-light overflow-x-hidden">
+		<div className="bg-transparent z-10 tracking-wide font-light overflow-x-hidden">
 			<NavBar />
+
 			<Home />
 			<About />
 			<Portfolio />
