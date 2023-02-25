@@ -8,20 +8,27 @@ const AboutCards = () => {
 
 	useEffect(() => {
 		if (inView) {
-			controls.start({
-				opacity: 1,
-				scale: 1,
-				transition: { duration: 0.8 },
-			});
+			controls.start("visible");
 		}
 		if (!inView) {
-			controls.start({
-				opacity: 0,
-				scale: 0,
-				transition: { duration: 0.8 },
-			});
+			controls.start("hidden");
 		}
 	}, [inView]);
+
+	const variants = {
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.8,
+				staggerChildren: 0.4,
+			},
+		},
+		hidden: {
+			opacity: 0,
+			y: 50,
+		},
+	};
 
 	const aquiredSkills = [
 		{
@@ -50,15 +57,18 @@ const AboutCards = () => {
 		},
 	];
 	return (
-		<div
+		<motion.div
 			ref={ref}
+			variants={variants}
+			initial="hidden"
+			animate={controls}
 			className="w-full h-full mt-14 grid grid-cols-1 md:grid-cols-2 py-8 gap-8 md:gap-6"
 		>
 			{aquiredSkills.map(({ id, title, content }) => (
 				<motion.div
-					animate={controls}
 					key={id}
-					className="p-4 rounded-lg shadow-md shadow-gray-400"
+					variants={variants}
+					className="p-6 rounded-lg bg-[#1B1B1B]"
 				>
 					<div className="mb-6 text-2xl text-center text-yellow-500 h-12">
 						<p>{title}</p>
@@ -68,7 +78,7 @@ const AboutCards = () => {
 					</div>
 				</motion.div>
 			))}
-		</div>
+		</motion.div>
 	);
 };
 export default AboutCards;

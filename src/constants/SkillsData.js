@@ -1,17 +1,19 @@
-import css from "../../assets/css-logo.png";
-import express from "../../assets/expressjs-logo.png";
-import firebase from "../../assets/firebase-logo.png";
-import git from "../../assets/git-logo.png";
-import html from "../../assets/html-logo.png";
-import js from "../../assets/js-logo.png";
-import mongo from "../../assets/mongoDb-logo.png";
-import nodejs from "../../assets/nodejs-logo.png";
-import react from "../../assets/react-logo.png";
-import redux from "../../assets/redux-logo.png";
-import tailwind from "../../assets/tailwind-logo.png";
-import github from "../../assets/github-logo.png";
-import framermotion from "../../assets/framer-motion-logo.png";
-import bootstrap from "../../assets/bootstrap-logo.png";
+import css from "../assets/css-logo.png";
+import express from "../assets/expressjs-logo.png";
+import firebase from "../assets/firebase-logo.png";
+import git from "../assets/git-logo.png";
+import html from "../assets/html-logo.png";
+import js from "../assets/js-logo.png";
+import mongo from "../assets/mongoDb-logo.png";
+import nodejs from "../assets/nodejs-logo.png";
+import react from "../assets/react-logo.png";
+import redux from "../assets/redux-logo.png";
+import tailwind from "../assets/tailwind-logo.png";
+import github from "../assets/github-logo.png";
+import framermotion from "../assets/framer-motion-logo.png";
+import bootstrap from "../assets/bootstrap-logo.png";
+import vite from "../assets/vite-logo.png";
+import mui from "../assets/material-ui-logo.png";
 
 const techs = [
 	{
@@ -110,6 +112,20 @@ const techs = [
 		src: bootstrap,
 		title: "Bootstrap",
 		style: "shadow-purple-500",
+		catergory: "frontend",
+	},
+	{
+		id: 15,
+		src: vite,
+		title: "Vite",
+		style: "shadow-yellow-500",
+		catergory: "frontend",
+	},
+	{
+		id: 16,
+		src: mui,
+		title: "MUI",
+		style: "shadow-blue-500",
 		catergory: "frontend",
 	},
 ];

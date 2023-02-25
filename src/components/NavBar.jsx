@@ -66,7 +66,7 @@ const NavBar = () => {
 					initial={{ x: "100vw" }}
 					animate={{ x: 0 }}
 					transition={{ duration: 0.5 }}
-					className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/5 h-screen bg-gradient-to-b from-black to-gray-800 md:hidden"
+					className="flex flex-col justify-center items-center absolute top-0 right-0 w-1/4 h-screen bg-gradient-to-b from-black to-gray-800 md:hidden"
 				>
 					{links.map(({ id, link }) => (
 						<a

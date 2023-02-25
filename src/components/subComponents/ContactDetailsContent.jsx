@@ -59,7 +59,7 @@ const ContactDetailsContent = () => {
 					<MdEmail size={30} className="text-yellow-500" />
 				</>
 			),
-			text1: "kentfortich.ccs@gmial.com",
+			text1: "kentfortich.ccs@gmail.com",
 			text2: "Send it here",
 		},
 	];

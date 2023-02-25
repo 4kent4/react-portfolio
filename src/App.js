@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
+import Footer from "./components/Footer";
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 			<Portfolio />
 			<Skills />
 			<Contact />
+			<Footer />
 
 			<SocialLinks />
 		</div>
