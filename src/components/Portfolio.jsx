@@ -61,7 +61,7 @@ const Portfolio = () => {
 								<img src={src} alt="" className="rounded-md" />
 								<motion.div
 									initial={{ opacity: 0 }}
-									whileHover={{ opacity: 1, transition: { duration: 0.3 } }}
+									whileTap={{ opacity: 1, transition: { duration: 0.3 } }}
 									className="absolute bg-[#202124] right-1 left-1 bottom-1 rounded-lg md:h-1/2 p-4 text-[10px] md:text-[16px]"
 								>
 									<p>{des}</p>

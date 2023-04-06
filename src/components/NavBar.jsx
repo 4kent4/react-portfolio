@@ -33,9 +33,13 @@ const NavBar = () => {
 
 	return (
 		<nav className="flex justify-between items-center w-screen h-20 px-4 z-50 text-white bg-[#1b1b1b] fixed">
-			<div className="h-10 w-10 ml-10">
-				<img src={nice} alt="nice" />
-			</div>
+			<a
+				href="#home"
+				className="h-10 w-10 ml-10 rounded-lg cursor-pointer"
+				onClick={() => setNavActive(1)}
+			>
+				<img src={nice} alt="nice" className=" rounded-lg" />
+			</a>
 
 			<div className="hidden md:flex">
 				{links.map(({ id, link }) => (

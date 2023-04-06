@@ -70,11 +70,11 @@ const ContactDetailsContent = () => {
 				{details.map(({ id, icon, text1, text2 }) => (
 					<div
 						key={id}
-						className="flex mb-8 flex-col md:flex-row  md:text-left"
+						className="flex mb-8 flex-col md:flex-row  md:text-left md:gap-4"
 					>
-						<div className=" h-8 w-8 mb-2 md:mb-0 pl-4 md:pl-0">{icon}</div>
+						<div className=" h-8 w-8 mb-2 md:mb-0">{icon}</div>
 
-						<div className="ml-4">
+						<div>
 							<p className="text-xl">{text1}</p>
 							<p className="text-xl">{text2}</p>
 						</div>

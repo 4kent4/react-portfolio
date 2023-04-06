@@ -9,11 +9,7 @@ const SkillsContent = () => {
 
 	useEffect(() => {
 		if (inView) {
-			const interval = setInterval(() => {
-				controls.start("visible");
-				console.log("running");
-			}, 2000);
-			return () => clearInterval(interval);
+			controls.start("visible");
 		}
 		if (!inView) {
 			controls.start("hidden");
@@ -31,7 +27,7 @@ const SkillsContent = () => {
 		},
 		hidden: {
 			opacity: 0,
-			scale: 0,
+			scale: 1,
 		},
 	};
 
@@ -47,8 +43,11 @@ const SkillsContent = () => {
 					<motion.div
 						variants={variants}
 						key={id}
-						className={`bg-[#1b1b1b] shadow-md py-2 rounded-lg ${style}`}
-						whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+						className={`bg-[#1b1b1b] shadow-md py-2 rounded-lg ${style} cursor-pointer`}
+						whileHover={{
+							scale: 1.1,
+							transition: { duration: 0.3 },
+						}}
 					>
 						<img src={src} alt="" className="w-20 mx-auto" />
 						<p className="mt-4">{title}</p>
