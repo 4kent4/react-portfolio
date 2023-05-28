@@ -52,11 +52,7 @@ const SkillsFilterBtn = ({
 	};
 
 	return (
-<<<<<<< HEAD
 		<div className="gap-8 mt-10 mb-10 flex justify-between flex-wrap">
-=======
-		<div className="p-4 mt-10 mb-10 flex justify-between">
->>>>>>> bbfa047fee58dac9966a7e86a187b8685a6c82a9
 			{BTN.map(({ id, title }) => (
 				<button
 					onClick={() => changeHandler(id, title)}
