@@ -50,9 +50,9 @@ const HeroContex = () => {
 				<h2 className="text-4xl md:text-7xl font-bold text-white">
 					I'm a Front-end Web Developer
 				</h2>
-				<p className="text-gray-500 py-4 max-w-md">
+				<p className="text-white py-4 max-w-md">
 					I love to work on web application using technologies like Reactjs,
-					tailwind css, FramerMotion.
+					Nextjs, tailwind css and FramerMotion.
 				</p>
 				<div className="flex md:justify-center lg:justify-start">
 					<a

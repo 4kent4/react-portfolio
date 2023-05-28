@@ -1,59 +1,64 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimationControls } from "framer-motion";
 import SkillsData from "../../constants/SkillsData";
+import SkillsFilterBtn from "./SkillsFilterBtn";
 
 const SkillsContent = () => {
+	const [activeSkills, setActiveSkills] = useState(SkillsData);
+	const [activeCategory, setActiveCategory] = useState("All");
+	const [filtered, setFiltered] = useState([]);
+	const [activeNav, setActiveNav] = useState("All");
+
 	const { ref, inView } = useInView({ threshold: 0.01 });
 	const controls = useAnimationControls();
 
 	useEffect(() => {
 		if (inView) {
-			controls.start("visible");
+			controls.start({
+				opacity: 1,
+				scale: 1,
+				transition: {
+					duration: 0.3,
+				},
+			});
 		}
 		if (!inView) {
-			controls.start("hidden");
+			controls.start({
+				opacity: 0,
+				scale: 0,
+				transition: {
+					duration: 0.3,
+				},
+			});
 		}
 	}, [inView]);
 
-	const variants = {
-		visible: {
-			opacity: 1,
-			scale: 1,
-			transition: {
-				duration: 0.3,
-				staggerChildren: 0.1,
-			},
-		},
-		hidden: {
-			opacity: 0,
-			scale: 1,
-		},
-	};
-
 	return (
-		<div className="h-full w-full" ref={ref}>
-			<motion.div
-				variants={variants}
-				initial="hidden"
-				animate={controls}
-				className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0"
-			>
-				{SkillsData.map(({ title, id, src, style }) => (
+		<div className="h-100% w-full min-h-screen" ref={ref}>
+			<SkillsFilterBtn
+				activeSkills={activeSkills}
+				activeCategory={activeCategory}
+				setActiveCategory={setActiveCategory}
+				setFiltered={setFiltered}
+				activeNav={activeNav}
+				setActiveNav={setActiveNav}
+			/>
+			<div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+				{filtered.map(({ title, id, src, style }) => (
 					<motion.div
-						variants={variants}
+						layout
+						animate={controls}
 						key={id}
 						className={`bg-[#1b1b1b] shadow-md py-2 rounded-lg ${style} cursor-pointer`}
-						whileHover={{
-							scale: 1.1,
-							transition: { duration: 0.3 },
-						}}
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
 					>
 						<img src={src} alt="" className="w-20 mx-auto" />
 						<p className="mt-4">{title}</p>
 					</motion.div>
 				))}
-			</motion.div>
+			</div>
 		</div>
 	);
 };
