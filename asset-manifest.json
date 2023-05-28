@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.c10f0fdd.css",
-    "main.js": "/react-portfolio/static/js/main.1d3f7283.js",
+    "main.css": "/react-portfolio/static/css/main.b7f6ef76.css",
+    "main.js": "/react-portfolio/static/js/main.d2a6e850.js",
     "static/media/Me.png": "/react-portfolio/static/media/Me.1fb103de0192785dd658.png",
     "static/media/soundsurge.png": "/react-portfolio/static/media/soundsurge.87eaa6d4711641801673.png",
     "static/media/dalle.png": "/react-portfolio/static/media/dalle.369929fc493d1624e896.png",
@@ -11,11 +11,11 @@
     "static/media/react-logo.png": "/react-portfolio/static/media/react-logo.9911848e6c15b84c4b0c.png",
     "static/media/vite-logo.png": "/react-portfolio/static/media/vite-logo.527f4a8a6544ef5a8765.png",
     "index.html": "/react-portfolio/index.html",
-    "main.c10f0fdd.css.map": "/react-portfolio/static/css/main.c10f0fdd.css.map",
-    "main.1d3f7283.js.map": "/react-portfolio/static/js/main.1d3f7283.js.map"
+    "main.b7f6ef76.css.map": "/react-portfolio/static/css/main.b7f6ef76.css.map",
+    "main.d2a6e850.js.map": "/react-portfolio/static/js/main.d2a6e850.js.map"
   },
   "entrypoints": [
-    "static/css/main.c10f0fdd.css",
-    "static/js/main.1d3f7283.js"
+    "static/css/main.b7f6ef76.css",
+    "static/js/main.d2a6e850.js"
   ]
 }
