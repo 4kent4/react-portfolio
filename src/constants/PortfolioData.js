@@ -1,7 +1,8 @@
 import soundsurge from "../assets/soundsurge.png";
-import connectify from "../assets/connectify.png";
+
 import goalsetter from "../assets/goal-setter.png";
 import dalle from "../assets/dalle.png";
+import airbnb from "../assets/Airbnb.png";
 
 const portfolios = [
 	{
@@ -20,17 +21,17 @@ const portfolios = [
 	},
 	{
 		id: 3,
-		src: connectify,
-		des: "Connectify is a LinkedIn clone built with React, Redux, Material-UI, and Firebase. Deployed using Firebase",
-		href: "https://github.com/4kent4/Connectify",
-		demo: "https://connectify-dbb63.web.app/",
-	},
-	{
-		id: 4,
 		src: dalle,
 		des: "Developed using VITE, MERN stack OpenAI API Tailwind CSS. Deployed using Render and Netlify",
 		href: "https://github.com/4kent4/DALL-E-Clone",
 		demo: "https://kent-dall-e-clone.netlify.app/",
+	},
+	{
+		id: 4,
+		src: airbnb,
+		des: "A Full Stack Airbnb Clone developed using Next.js 13, Typescript, Tailwind, Prisma, MongoDB, NextAuth",
+		href: "https://github.com/4kent4/Airbnb-clone",
+		demo: "https://rental-web-app.vercel.app/",
 	},
 ];
 
