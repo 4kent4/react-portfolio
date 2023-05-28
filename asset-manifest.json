@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.327400dd.css",
-    "main.js": "/react-portfolio/static/js/main.2c9be6ca.js",
-    "static/media/Me.png": "/react-portfolio/static/media/Me.e760e4e94d23d9dda41c.png",
+    "main.css": "/react-portfolio/static/css/main.c10f0fdd.css",
+    "main.js": "/react-portfolio/static/js/main.1d3f7283.js",
+    "static/media/Me.png": "/react-portfolio/static/media/Me.1fb103de0192785dd658.png",
     "static/media/soundsurge.png": "/react-portfolio/static/media/soundsurge.87eaa6d4711641801673.png",
     "static/media/dalle.png": "/react-portfolio/static/media/dalle.369929fc493d1624e896.png",
-    "static/media/connectify.png": "/react-portfolio/static/media/connectify.bd55d0abab3fc8cdb591.png",
-    "static/media/resume.pdf": "/react-portfolio/static/media/resume.8f1466eaedae3d3bc217.pdf",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.e591acff56e6a3e028c0.pdf",
+    "static/media/Airbnb.png": "/react-portfolio/static/media/Airbnb.aa3edbc19b2a4a6e2674.png",
     "static/media/goal-setter.png": "/react-portfolio/static/media/goal-setter.6e97c4b1f1b11d634289.png",
     "static/media/react-logo.png": "/react-portfolio/static/media/react-logo.9911848e6c15b84c4b0c.png",
     "static/media/vite-logo.png": "/react-portfolio/static/media/vite-logo.527f4a8a6544ef5a8765.png",
     "index.html": "/react-portfolio/index.html",
-    "main.327400dd.css.map": "/react-portfolio/static/css/main.327400dd.css.map",
-    "main.2c9be6ca.js.map": "/react-portfolio/static/js/main.2c9be6ca.js.map"
+    "main.c10f0fdd.css.map": "/react-portfolio/static/css/main.c10f0fdd.css.map",
+    "main.1d3f7283.js.map": "/react-portfolio/static/js/main.1d3f7283.js.map"
   },
   "entrypoints": [
-    "static/css/main.327400dd.css",
-    "static/js/main.2c9be6ca.js"
+    "static/css/main.c10f0fdd.css",
+    "static/js/main.1d3f7283.js"
   ]
 }
