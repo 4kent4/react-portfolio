@@ -3,6 +3,7 @@ import soundsurge from "../assets/soundsurge.png";
 import goalsetter from "../assets/goal-setter.png";
 import dalle from "../assets/dalle.png";
 import airbnb from "../assets/Airbnb.png";
+import styledup from "../assets/styledup.png";
 
 const portfolios = [
 	{
@@ -32,6 +33,13 @@ const portfolios = [
 		des: "A Full Stack Airbnb Clone developed using Next.js 13, Typescript, Tailwind, Prisma, MongoDB, NextAuth",
 		href: "https://github.com/4kent4/Airbnb-clone",
 		demo: "https://rental-web-app.vercel.app/",
+	},
+	{
+		id: 4,
+		src: styledup,
+		des: "A still work in progress full stack Ecommerce website",
+		href: "https://github.com/4kent4/styleup-mern-ecommerce",
+		demo: "https://styledup-ecommerce.netlify.app/",
 	},
 ];
 
