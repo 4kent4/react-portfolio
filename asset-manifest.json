@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.b7f6ef76.css",
-    "main.js": "/react-portfolio/static/js/main.2fc69db6.js",
+    "main.js": "/react-portfolio/static/js/main.68569a3f.js",
     "static/media/Me.png": "/react-portfolio/static/media/Me.1fb103de0192785dd658.png",
     "static/media/soundsurge.png": "/react-portfolio/static/media/soundsurge.87eaa6d4711641801673.png",
-    "static/media/dalle.png": "/react-portfolio/static/media/dalle.369929fc493d1624e896.png",
+    "static/media/styledup.png": "/react-portfolio/static/media/styledup.fbfe6df775446f3a968b.png",
+    "static/media/dalle.png": "/react-portfolio/static/media/dalle.65d867acc9f8e6c6eb71.png",
     "static/media/resume.pdf": "/react-portfolio/static/media/resume.9b30694cd659fc91f879.pdf",
     "static/media/Airbnb.png": "/react-portfolio/static/media/Airbnb.aa3edbc19b2a4a6e2674.png",
     "static/media/goal-setter.png": "/react-portfolio/static/media/goal-setter.6e97c4b1f1b11d634289.png",
@@ -12,10 +13,10 @@
     "static/media/vite-logo.png": "/react-portfolio/static/media/vite-logo.527f4a8a6544ef5a8765.png",
     "index.html": "/react-portfolio/index.html",
     "main.b7f6ef76.css.map": "/react-portfolio/static/css/main.b7f6ef76.css.map",
-    "main.2fc69db6.js.map": "/react-portfolio/static/js/main.2fc69db6.js.map"
+    "main.68569a3f.js.map": "/react-portfolio/static/js/main.68569a3f.js.map"
   },
   "entrypoints": [
     "static/css/main.b7f6ef76.css",
-    "static/js/main.2fc69db6.js"
+    "static/js/main.68569a3f.js"
   ]
 }
