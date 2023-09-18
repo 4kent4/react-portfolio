@@ -13,7 +13,7 @@ const AboutCards = () => {
 		if (!inView) {
 			controls.start("hidden");
 		}
-	}, [inView]);
+	}, [inView, controls]);
 
 	const variants = {
 		visible: {
@@ -68,7 +68,7 @@ const AboutCards = () => {
 				<motion.div
 					key={id}
 					variants={variants}
-					className="p-6 rounded-lg bg-[#1B1B1B]"
+					className="p-6 rounded-md bg-[#1B1B1B] shadow-md hover:shadow-white duration-500 cursor-pointer"
 				>
 					<div className="mb-6 text-2xl text-center text-yellow-500 h-12">
 						<p>{title}</p>
