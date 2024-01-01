@@ -1,5 +1,6 @@
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import {loadFull} from "tsparticles";
+
 
 const Particle = () => {
 	const particlesInit = async (main) => {
@@ -23,7 +24,7 @@ const Particle = () => {
 					},
 					particles: {
 						number: {
-							value: 10,
+							value: 15,
 							density: {
 								enable: false,
 								value_area: 500,
@@ -83,7 +84,7 @@ const Particle = () => {
 							straight: false,
 							out_mode: "out",
 							attract: {
-								enable: false,
+								enable: true,
 								rotateX: 600,
 								rotateY: 600,
 							},
@@ -92,12 +93,12 @@ const Particle = () => {
 					interactivity: {
 						events: {
 							onhover: {
-								enable: false,
-								mode: ["grab"],
+								enable: true,
+								mode: ["repulse","grab"],
 							},
 							onclick: {
 								enable: false,
-								mode: "bubble",
+								mode: "remove",
 							},
 							resize: true,
 						},
@@ -116,20 +117,20 @@ const Particle = () => {
 								speed: 3,
 							},
 							repulse: {
-								distance: 200,
+								distance: 100,
 							},
 							push: {
 								particles_nb: 4,
 							},
 							remove: {
-								particles_nb: 2,
+								particles_nb: 1,
 							},
 						},
 					},
 					retina_detect: true,
 					background: {
 						color: "#10212a",
-						image: "",
+						image: '',
 						position: "50% 50%",
 						repeat: "no-repeat",
 						size: "cover",

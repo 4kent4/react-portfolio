@@ -3,10 +3,14 @@ import { motion, useAnimationControls } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import PortfolioCardDesc from "./subComponents/PortfolioCardDesc";
+import Carousel from "./subComponents/Carousel";
+
+
 
 const Portfolio = () => {
 	const { ref, inView } = useInView({ threshold: 0.2 });
 	const controls = useAnimationControls();
+	
 
 	useEffect(() => {
 		if (inView) {
@@ -15,7 +19,7 @@ const Portfolio = () => {
 		if (!inView) {
 			controls.start("hidden");
 		}
-	}, [inView]);
+	}, [inView, controls]);
 
 	const variants = {
 		visible: {
@@ -35,11 +39,11 @@ const Portfolio = () => {
 	return (
 		<div
 			id="portfolio"
-			className="bg-transparent w-full text-white h-full py-20"
+			className="bg-transparent w-full text-white h-full pt-20"
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
 				<div className="pb-8">
-					<p className="text-4xl font-bold inline border-b-4 border-yellow-500">
+					<p className="text-4xl inline border-b-4 border-yellow-500">
 						Portfolio
 					</p>
 					<p className="py-6">Check out some of my work right here</p>
@@ -58,11 +62,16 @@ const Portfolio = () => {
 							className="shadow-md shadow-gray-400 rounded-lg"
 							variants={variants}
 						>
-							<div className="relative">
-								<img src={src} alt="" className="rounded-md" />
-
-								<PortfolioCardDesc des={des} />
-							</div>
+							
+								<Carousel>
+								{src.map((imageUrl, index) => (
+									
+									<img src={imageUrl} key={index} alt="" className="rounded-md" />
+									))}
+								</Carousel>
+									
+							<PortfolioCardDesc des={des} />
+							
 							<div className="flex items-center justify-evenly h-18">
 								<a
 									href={demo}
@@ -85,6 +94,7 @@ const Portfolio = () => {
 					))}
 				</motion.div>
 			</div>
+
 		</div>
 	);
 };

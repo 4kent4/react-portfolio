@@ -23,10 +23,14 @@ const NavBar = () => {
 		},
 		{
 			id: 4,
-			link: "skills",
+			link: "certificates",
 		},
 		{
 			id: 5,
+			link: "skills",
+		},
+		{
+			id: 6,
 			link: "contact",
 		},
 	];
@@ -35,10 +39,10 @@ const NavBar = () => {
 		<nav className="flex justify-between items-center w-screen h-20 px-4 z-50 text-white bg-[#1b1b1b] fixed">
 			<a
 				href="#home"
-				className="h-10 w-10 ml-10 rounded-lg cursor-pointer"
+				className="h-10 w-10 ml-10 rounded-sm cursor-pointer"
 				onClick={() => setNavActive(1)}
 			>
-				<img src={nice} alt="nice" className=" rounded-lg" />
+				<img src={nice} alt="nice" className=" rounded-sm" />
 			</a>
 
 			<div className="hidden md:flex">
@@ -47,7 +51,7 @@ const NavBar = () => {
 						href={`#${link}`}
 						onClick={() => setNavActive(id)}
 						key={id}
-						className={`p-2 w-28 rounded-lg items-center text-center cursor-pointer font-medium capitalize ${`hover:bg-gray-500 hover:text-white duration-500`} duration-5000 ${
+						className={`p-2 w-28 rounded-sm items-center text-center cursor-pointer font-medium capitalize ${`hover:bg-gray-500 hover:text-white duration-500`} duration-5000 ${
 							navActive === id
 								? " text-black bg-gradient-to-r from-yellow-300 to-yellow-600 duration-500"
 								: "text-gray-400"

@@ -34,7 +34,7 @@ const AboutIntro = () => {
 	return (
 		<div ref={ref} className="w-full h-full">
 			<motion.div animate={controls} className="pb-8">
-				<p className="text-4xl font-bold inline border-b-4 border-yellow-500">
+				<p className="text-4xl inline border-b-4 border-yellow-500">
 					About
 				</p>
 
